@@ -6,6 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-store"/>
     <meta http-equiv="Expires" content="0" />
+    <!-- 防跨站请求伪造 攻击（csrf） 请求token -->
     <meta name="_csrf" th:content="${_csrf.token}"/>
     <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
     <title layout:title-pattern="$DECORATOR_TITLE - $CONTENT_TITLE">安全设计</title>

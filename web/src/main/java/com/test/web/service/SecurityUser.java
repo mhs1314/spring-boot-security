@@ -26,7 +26,7 @@ public class SecurityUser extends User implements UserDetails
             this.setRoles(user.getRoles());
         }
     }
-
+    //取得用户分配的权限列表用于后面的权限验证
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Collection<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();

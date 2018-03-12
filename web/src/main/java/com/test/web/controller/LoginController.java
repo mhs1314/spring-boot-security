@@ -23,7 +23,13 @@ public class LoginController {
         return "login";
     }
 
-
+    /**
+     * 验证码验证
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value = "/images/imagecode")
     public String imagecode(HttpServletRequest request, HttpServletResponse response)
             throws Exception {

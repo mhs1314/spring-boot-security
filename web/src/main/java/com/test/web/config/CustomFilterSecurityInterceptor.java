@@ -9,7 +9,12 @@ import org.springframework.security.web.access.intercept.FilterInvocationSecurit
 
 import javax.servlet.*;
 import java.io.IOException;
-
+/**
+ * 权限管理过滤器
+ * 实时监控用户行为，防止用户访问未授权的资源
+ * @author mhs123
+ *
+ */
 public class CustomFilterSecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
     private static final Logger logger = Logger.getLogger(CustomFilterSecurityInterceptor.class);
     private FilterInvocationSecurityMetadataSource securityMetadataSource;

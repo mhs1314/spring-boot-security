@@ -10,7 +10,12 @@ import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Collection;
 import java.util.Iterator;
-
+/**
+ * 权限管理决断器
+ * 权限决断器对用户访问的资源与用户的角色权限进行对比，以此来判断一个用户是否对一个资源具有访问权限
+ * @author mhs123
+ *
+ */
 public class CustomAccessDecisionManager implements AccessDecisionManager {
     private static final Logger logger = Logger.getLogger(CustomAccessDecisionManager.class);
 

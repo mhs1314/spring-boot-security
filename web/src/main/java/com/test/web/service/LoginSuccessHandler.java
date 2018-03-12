@@ -10,7 +10,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
+/**
+ * 登陆成功处理器
+ * @author Administrator
+ *
+ */
 public class LoginSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
     protected Log log = LogFactory.getLog(getClass());
 

@@ -9,7 +9,12 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.util.PathMatcher;
 
 import java.util.*;
-
+/**
+ * 权限配置资源管理器
+ * 在启动时导入权限配置列表。权限配置资源管理器为权限决断器实时提供支持，判断用户访问的资源是否在受保护的范围内
+ * @author mhs123
+ *
+ */
 public class CustomSecurityMetadataSource implements FilterInvocationSecurityMetadataSource{
     private static final Logger logger = Logger.getLogger(CustomSecurityMetadataSource .class);
 

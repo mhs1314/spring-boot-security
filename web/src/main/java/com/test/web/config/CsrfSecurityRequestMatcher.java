@@ -7,7 +7,11 @@ import org.springframework.security.web.util.matcher.RequestMatcher;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.regex.Pattern;
-
+/**
+ * 排除csrf保护策略
+ * @author mhs123
+ *
+ */
 public class CsrfSecurityRequestMatcher implements RequestMatcher {
     protected Log log = LogFactory.getLog(getClass());
     private Pattern allowedMethods = Pattern

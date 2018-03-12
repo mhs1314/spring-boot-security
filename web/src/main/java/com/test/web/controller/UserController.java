@@ -43,7 +43,13 @@ public class UserController {
 
     @Value("${securityconfig.urlroles}")
     private String urlroles;
-
+    /**
+     * 获取用户权限用于页面显示
+     * @param model
+     * @param user
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("/index")
     public String index(ModelMap model, Principal user) throws Exception{
         Authentication authentication = (Authentication)user;
