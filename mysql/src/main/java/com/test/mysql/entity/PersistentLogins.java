@@ -2,7 +2,11 @@ package com.test.mysql.entity;
 
 import javax.persistence.*;
 import java.util.Date;
-
+/**
+ * 记住用户登陆状态的实体建模
+ * @author mhs123
+ *
+ */
 @Entity
 @Table(name = "persistent_logins")
 public class PersistentLogins implements java.io.Serializable{
@@ -10,12 +14,12 @@ public class PersistentLogins implements java.io.Serializable{
     @Column(name = "series", length = 64, nullable = false)
     private String series;
     @Column(name = "username", length = 64, nullable = false)
-    private String username;
+    private String username;//用户名
     @Column(name = "token", length = 64, nullable = false)
-    private String token;
+    private String token;//令牌
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "last_used", nullable = false)
-    private Date last_used;
+    private Date last_used;//最后登陆时间
 
     public PersistentLogins() {
     }

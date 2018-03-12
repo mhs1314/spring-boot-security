@@ -27,7 +27,7 @@ public class MysqlTest {
     DepartmentRepository departmentRepository;
     @Autowired
     RoleRepository roleRepository;
-
+    //系统初始化
     @Before
     public void initData(){
         userRepository.deleteAll();
